@@ -1,0 +1,772 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* header start here */
+header{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    background-color: #0000008f;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 550;
+    text-transform: capitalize;
+    margin: 0 10px;
+    padding: 30px 0;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #F39C12;
+}
+.navbar-light .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4%;
+    background-color:#F39C12;
+    left: 0;
+    bottom: -3%;
+    transition: .6s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::before {
+    width: 50%;
+}
+.navbar-light .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4%;
+    background-color: #F39C12;
+    right: 0;
+    bottom: -3%;
+    transition: .6s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 50%;
+}
+.navbar {
+    padding: 0;
+}
+.header-content span{
+    font-size: 70px;
+    color: #F39C12;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+    display: block;
+}
+.jhamela{
+    position: absolute;
+    left: 76%;
+    bottom: -38%;
+    transform: translate(-76%, 38%);
+}
+.searchbar{
+    float: right;
+    position: relative;
+    width: 100%;
+}
+.searchbar .tp{
+    border-bottom: none;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+input::placeholder{
+    color: rgb(39, 39, 39);
+    font-size: 18px;
+}
+.search-icon{
+    font-size: 21px;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    color: #ffffff;
+    background-color: #f39c12;
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+}
+.header-content h1{
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+}
+.bt{
+    margin-top: 150px;
+    text-align: center;
+}
+.btn-st{
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding: 8px 30px;
+    border: none;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    margin-right: 6px;
+    transition: .4s all ease-in-out;
+}
+.btn-st:hover{
+    color: #ffffff;
+    background-color: #f39c12;
+    border-color: transparent;
+}
+.btn-pt{
+    color: #ffffff;
+    background-color: #f39c12;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    padding: 8px 30px;
+    border-color: transparent;
+    border-radius: 0px;
+    margin-left: 6px;
+    transition: .4s all ease-in-out;
+}
+.btn-pt:hover{
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+.hg{
+    min-height: 90vh;
+}
+
+/* header end here */
+
+
+/* about start here */
+
+.about{
+    padding: 100px 0;
+}
+.me{
+    padding: 0 80px;
+}
+.hd h2{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #383838;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.hd p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #383838;
+    font-family: 'Raleway', sans-serif;
+}
+.hd span{
+    display: block;
+    width: 80%;
+    background: #f39c12;
+    height: 2px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 70px;
+}
+.hd span::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: #f39c12;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: ani 4s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes ani{
+    0%{
+        left: 40%;
+    }
+    40%{
+        left: 60%;
+    }
+    80%{
+        left: 50%;
+    }
+    100%{
+        left: 40%;
+    }
+}
+
+.bar{
+    padding-top: 120px;  
+}
+.bar h5{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(61, 60, 60);
+    text-transform: capitalize;
+}
+.progress{
+    width: 75%;
+    border-radius: 0px;
+    height: 15px;
+    margin: 12px 0;
+}
+.progress-bar{
+    background-color: #f39c12;
+    height: 15px;
+}
+.pr{
+    position: relative;
+}
+.percent{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.badge-percent{
+    background: #f39c12;
+    padding: 10px;
+    border-radius: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.badge-percent::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 15px;
+    background:  #f39c12;
+    left: -15%;
+    top: 33%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+/* about end here */
+
+
+
+/* service start here */
+
+.my-service{
+   padding-bottom: 100px;
+}
+
+.service{
+    border: 1px solid #e6e6e6;
+    padding: 30px;
+    transition: .3s all ease-in-out;
+    position: relative;
+}
+.icon{
+    background: #919190;
+    color: #ffffff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: auto;
+}
+.service h3{
+    font-size: 15px;
+    font-weight: bold;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 15px;
+    transition: .3s all ease-in-out;
+}
+.service p{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: #6e6e6e;
+    margin: 0;
+    transition: .3s all ease-in-out;
+}
+.service:hover{
+    background-color: #f39c12;
+    border-color: #ffffff;
+}
+.service:hover h3{
+    color: #ffffff;
+}
+.service:hover p{
+    color: #ffffff;
+}
+.service:hover .icon{
+    background-color: #ffffff;
+    color: #f39c12;
+}
+.service::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 100px solid  #ffffff;
+    border-right: 100px solid transparent;
+    top: 0;
+    left: 0;
+}
+.service::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-top: 2px solid  #ffffff;
+    border-left: 2px solid  #ffffff;
+    top: 0;
+    left: 0;
+    transition: .3s all ease-in-out;
+}
+.service:hover::after{
+    border-top: 2px solid  #f39c12;
+    border-left: 2px solid  #f39c12;
+}
+
+/* service end here */
+
+/* state start here */
+
+.state{
+    padding: 100px 0;
+    background-image: url(../images/state.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 45vh;
+}
+.state h2, .changing h2, .tweet h2{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.state-content{
+    color: #ffffff;
+}
+.state-content h4{
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    margin: 20px 0;
+}
+.state-content h5{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    margin: 25px 0;
+}
+.state-icon{
+    color:  #f39c12;
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 38px;
+    border-radius: 50%;
+    margin: auto;
+}
+.line{
+    position: relative;
+}
+.line::before{
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 2px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* state end here */
+
+/* work & filter gallery start here */
+
+.work{
+    padding: 100px 20px;
+}
+.gallery-title{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(44, 44, 44);
+    margin-bottom: 65px;
+    transition: .4s all ease-in-out;
+}
+.filter-button:hover{
+    border-radius: 0px;
+    color: #ffffff;
+    background-color: #f39c12;
+    box-shadow: none;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.port-image{
+    width: 100%;
+}
+.gallery_product{
+    margin-bottom: 30px;
+    position: relative;
+}
+.landing-one{
+    background-color: rgb(29 23 23 / 83%);
+    padding: 10px 15px;
+    position: absolute;
+    left: 16px;
+    bottom: -5px;
+    width: 94.5%;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.landing{
+    background-color: rgb(29 23 23 / 83%);
+    padding: 10px 15px;
+    position: absolute;
+    left: 16px;
+    bottom: -5px;
+    width: 92.5%;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.landing h4, .landing-one h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+.landing p, .landing-one p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+.search{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #ffffff;
+    background-color: #f39c12;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: .4s all ease-in-out;
+    opacity: 0;
+}
+.gallery_product:hover .landing-one{
+    opacity: 1;
+    bottom: 1px;
+}
+.gallery_product:hover .landing{
+    opacity: 1;
+    bottom: 1px;
+}
+.gallery_product:hover .search{
+    opacity: 1;
+    right: 30px;
+    top: 8px;
+}
+
+/* work+filter gallery end here */
+
+/* story start here */
+
+.story{
+    padding-bottom: 200px;
+}
+.eyes{
+    padding: 18px 25px;
+}
+.eyes h6{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(90, 89, 89);
+}
+.eyes h5{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #f39c12;
+}
+.eyes p{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #6e6e6e;
+    margin: 13px 0;
+}
+.btn-black{
+    color: #ffffff;
+    background-color: #aaaaaa;
+    text-transform: capitalize;
+    border-radius: 0;
+    padding: 5px 15px;
+    transition: .4s all ease-in-out;
+}
+.btn-black:hover{
+    background-color: rgb(20, 20, 20);
+    color: #ffffff;
+}
+
+/* story end here */
+
+/* life changing start here */
+
+.changing{
+    background-color: rgb(34, 34, 34);
+    padding: 70px 30px;
+}
+.changing p, .tweet p{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    margin: 13px 0;
+}
+
+/* life changing end here */
+
+/* feedback start here */
+
+.cl-feedback{
+    padding: 150px 0;
+}
+.feedback{
+    background-color: #f6f6f6;
+    padding: 35px;
+}
+.feedback h5{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #6b6b6b;
+    margin: 0;
+}
+.feedback p{
+    font-size: 15px;
+    margin: 0;
+    margin-top: 15px;
+    color: #838282;
+}
+.client{
+    display: flex;
+    margin-left: 85px;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-top: 20px solid #f6f6f6;
+    margin-left: 110px;
+    margin-bottom: 26px;
+}
+.client-details{
+    margin-left: 20px;
+}
+.client-details h6{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    color: #f39c12;
+    margin: 0;
+}
+.client-details p{
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 17px;
+    color: #838282;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* feedback end here */
+
+/* tweet start here */
+
+.tweet{
+    background-image: url(../images/tweet.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+    padding: 100px 0;
+}
+.tweet span{
+    color: #f39c12;
+}
+
+/* tweet end here */
+
+/* contact start here */
+
+.contact{
+    padding: 100px 0;
+}
+.contact p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #161616;
+    margin-bottom: 60px;
+}
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+}
+.form-group{
+    width: 45%;
+}
+.name-subject, .email-time {
+    display: flex;
+    justify-content: space-between;
+}
+.text-area{
+    width: 100%;
+}
+label {
+    font-size: 18px;
+}
+.btn-mr{
+    color: #ffffff;
+    background-color: #f39c12;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 8px 30px;
+    border-color: transparent;
+    border-radius: 0px;
+    transition: .4s all ease-in-out;
+}
+.btn-mr:hover{
+    background-color: #ffa719;
+    color: #ffffff;
+}
+
+/* contact end here */
+
+/* map start here */
+
+
+.map{
+    position: relative;
+}
+.map-content{
+    background-color:#f39c12cf;
+    position: absolute;
+    padding: 30px 25px;
+    left: 65%; 
+    top: 50%;
+    transform: translate(-65%, -50%);
+}
+.map-content h5{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.map-content h6{
+    margin: 0;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+/* map end here */
+
+/* follow me start here */
+
+.follow-me{
+    padding: 150px;
+}
+.social-icon{
+    margin-left: 50px;
+}
+.social-icon ul{
+    list-style: none;
+}
+.social-icon ul li{
+    float: left;
+}
+.social-icon ul li a {
+    color: #f39c12;
+    background: transparent;
+    border: 1px solid #e4e4e4;
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    transition: .4s all ease-in-out;
+}
+.social-icon ul li a:hover {
+    color: #ffffff;
+    background: #f39c12;
+}
+
+/* follow me end here */
+
+/* footer start here */
+
+.footer{
+    background-color: #f39c12;
+    padding: 30px;
+}
+.footer p{
+    font-size: 15px;
+    color: #5f564d;
+    font-weight: 500;
+    margin: 0;
+}
+.footer p span{
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* footer end here */
